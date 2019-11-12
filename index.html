@@ -888,7 +888,7 @@
                 </span>
                 
                 <span title="字数">
-                  1.5k
+                  2.1k
                 </span>
               
 
@@ -916,7 +916,7 @@
 
       
         
-          <p>排序算法之选择排序,选择排序，从头至尾扫描序列，找出最小的一个元素，和第一个元素交换，接着从剩下的元素中继续这种操作，选择和交换，循环往复，最终得到一个有序序列。</p>
+          <p>排序算法之选择排序,选择排序，选择排序的基本思想描述为：每一趟在n-i+1(i=1,2,…,n-1)个记录中选取关键字最小的记录作为有序序列中第i个记录。具体来说，假设长度为n的数组arr，要按照从小到大排序，那么先从n个数字中找到最小值min1，如果最小值min1的位置不在数组的最左端(也就是min1不等于arr[0])，则将最小值min1和arr[0]交换，接着在剩下的n-1个数字中找到最小值min2，如果最小值min2不等于arr[1]，则交换这两个数字，依次类推，直到数组arr有序排列。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/11/12/选择排序/" rel="contents">
@@ -2548,7 +2548,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共10.1k字 &nbsp;|&nbsp; Since 2019/11/01</span>
+  <span class="post-count">全站共10.7k字 &nbsp;|&nbsp; Since 2019/11/01</span>
 </div>
 
         
@@ -3078,6 +3078,28 @@ show_date_time();
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
