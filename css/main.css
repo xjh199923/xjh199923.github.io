@@ -2308,7 +2308,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d7edff;
+  background: #daa3a2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -4603,6 +4603,25 @@ a {
   }
   .local-search-popup a.search-result-title {
     font-size: 14px;
+  }
+}
+.post-body>p:first-child::first-letter {
+  float: left;
+/* height: 32px;*/
+  margin-top: 14px;
+  margin-right: 6px;
+  color: #555;
+  font-size: 42px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .post-body>p:first-child::first-letter {
+    margin-top: 10px;
+    margin-right: 4px;
+    font-size: 26px;
+    line-height: 20px;
   }
 }
 @-moz-keyframes heartAnimate {
