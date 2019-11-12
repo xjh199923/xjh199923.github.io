@@ -87,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="Hexo个人博客,NexT美化优化,Leaf,Github Pages,博客相册">
+  <meta name="keywords" content="数据结构,C++,Java,Python,">
 
 
 
@@ -98,13 +98,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="相逢何必问君处">
-<meta property="og:url" content="xjh199923.top/categories/数据结构/C/Java/Python/Hexo/index.html">
+<meta name="description" content="排序算法之选择排序,选择排序，从头至尾扫描序列，找出最小的一个元素，和第一个元素交换，接着从剩下的元素中继续这种操作，选择和交换，循环往复，最终得到一个有序序列。">
+<meta name="keywords" content="数据结构,C++,Java,Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="选择排序">
+<meta property="og:url" content="xjh199923.top/2019/11/12/选择排序/index.html">
 <meta property="og:site_name" content="相逢何必问君处">
+<meta property="og:description" content="排序算法之选择排序,选择排序，从头至尾扫描序列，找出最小的一个元素，和第一个元素交换，接着从剩下的元素中继续这种操作，选择和交换，循环往复，最终得到一个有序序列。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zMi5heDF4LmNvbS8yMDE5LzExLzEyL00zMlFUeC5naWY">
+<meta property="og:image" content="https://s2.ax1x.com/2019/11/12/M8Alhn.png">
+<meta property="og:updated_time" content="2019-11-12T13:56:04.941Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="相逢何必问君处">
+<meta name="twitter:title" content="选择排序">
+<meta name="twitter:description" content="排序算法之选择排序,选择排序，从头至尾扫描序列，找出最小的一个元素，和第一个元素交换，接着从剩下的元素中继续这种操作，选择和交换，循环往复，最终得到一个有序序列。">
+<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zMi5heDF4LmNvbS8yMDE5LzExLzEyL00zMlFUeC5naWY">
 
 
 
@@ -134,7 +142,7 @@
 
 
 
-  <link rel="canonical" href="xjh199923.top/categories/数据结构/C/Java/Python/Hexo/">
+  <link rel="canonical" href="xjh199923.top/2019/11/12/选择排序/">
 
 
 
@@ -152,7 +160,7 @@
     })();
 </script>
 
-  <title>分类: Hexo | 相逢何必问君处</title>
+  <title>选择排序 | 相逢何必问君处</title>
 
   
       <!-- 球型气泡标签云 -->
@@ -179,7 +187,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <!--fork me from github-->
@@ -328,53 +336,372 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Hexo<small>分类</small>
-        </h2>
-      </div>
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="xjh199923.top/2019/11/12/选择排序/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="相逢">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="相逢何必问君处">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">选择排序</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+             
+
+             
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-12T18:55:34+08:00">
+                2019-11-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C++</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/C/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/C/Java/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          <!--
+          
+          -->
+
+          
+            <span class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数">
+                  1.5k
+                </span>
+              
+
+              
+
+              
+            </span>
+          
+
+          <!-- 隐藏文章内标题下，内容描述
+          
+          -->
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
+
+      
+        <p>排序算法之选择排序,选择排序，从头至尾扫描序列，找出最小的一个元素，和第一个元素交换，接着从剩下的元素中继续这种操作，选择和交换，循环往复，最终得到一个有序序列。</p>
+<a id="more"></a>
+
+<div class="note info"><p>算法过程</p>
+<p>举个栗子（第一趟的排序过程）</p>
+<p>原始序列：3、44、38、5、47、15、36、 26、27、2、46、4、19、50、48</p>
+<p>1）在进行选择排序过程中分成有序和无序两个部分，开始都是无序序列</p>
+<p>结果：3、44、38、5、47、15、36、 26、27、2、46、4、19、50、48</p>
+<p>2）从无序序列中取出最小的元素2，将2同无序序列第一个元素交换，此时产生仅含一个元素的有序序列，无序序列减一</p>
+<p>结果：{2、}   {44、38、5、47、15、36、 26、27、3、46、4、19、50、48</p>
+<p>3）从无序序列中取出最小的元素3，将3同无序序列第一个元素交换，此时产生仅两个元素的有序序列，无序序列减一</p>
+<p>结果：{2、3、}   {38、5、47、15、36、 26、27、44、46、4、19、50、48}</p>
+<p>4）从无序序列中取出最小的元素4，将4同无序序列第一个元素交换，此时产生含三个元素的有序序列，无序序列减一</p>
+<p>结果：{2、3、4、}   {5、47、15、36、 26、27、44、46、38、19、50、48}</p>
+<p>5）从无序序列中取出最小的元素5，5此时是无序序列最小的，不用交换</p>
+<p>结果：{2、3、4、5、}   {47、15、36、 26、27、44、46、38、19、50、48}</p>
+<p>6）从无序序列中取出最小的元素15，将15同无序序列第一个元素交换，此时产生含五个元素的有序序列，无序序列减一</p>
+<p>结果：{2、3、4、5、15、}   {47、36、 26、27、44、46、38、19、50、48}</p>
+<p>7）依次重复上述操作，直到无序序列只有最后一个元素</p>
+<p>8）最后一个元素50肯定是最大元素，无序排序直接生产一个有序的序列</p>
+<p>结果：{2、3、4、5、19、26、27、36、38、44、46、47、48、50}</p>
+<p>最后如果还没有理解这个过程的话，小编放上一个动图，让大家更深入的理解这个过程：</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zMi5heDF4LmNvbS8yMDE5LzExLzEyL00zMlFUeC5naWY" alt="插入排序动态分析图"></p></div>
+
+<h4 id="接下来分析完了插入排序的算法，我们就到了分享代码的这个激动人心的时刻了："><a href="#接下来分析完了插入排序的算法，我们就到了分享代码的这个激动人心的时刻了：" class="headerlink" title="接下来分析完了插入排序的算法，我们就到了分享代码的这个激动人心的时刻了："></a>接下来分析完了插入排序的算法，我们就到了分享代码的这个激动人心的时刻了：</h4><p><strong>插入排序C++实现代码：</strong></p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="CPP"><figure class="iseeu highlight /cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; get_random(<span class="keyword">int</span> n, <span class="keyword">int</span> N);</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAX_NUM=<span class="number">10000</span>;</span><br><span class="line"><span class="keyword">int</span> data[<span class="number">100</span>];<span class="comment">//定义一个产生数组储存100个随机数</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectSort</span><span class="params">(<span class="keyword">int</span> n)</span></span>;<span class="comment">//选择排序</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">output</span><span class="params">(<span class="keyword">int</span> n)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Swap</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  srand((<span class="keyword">unsigned</span> <span class="keyword">int</span>)time(<span class="number">0</span>));</span><br><span class="line">  <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; randsample=get_random(<span class="number">100</span>,MAX_NUM);<span class="comment">//产生100个0-MAZX_NUM的随机数,每次产生的随机数不一样</span></span><br><span class="line">  <span class="keyword">int</span> size=randsample.size();</span><br><span class="line">  <span class="comment">//输出最开始时未排序时的顺序:</span></span><br><span class="line">  <span class="built_in">cout</span>&lt;&lt;<span class="string">"随机数的顺序："</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;randsample.size();i++)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;randsample[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">  <span class="keyword">clock_t</span> start,finish;<span class="comment">//定义一个测量一段程序运行时间的前后值</span></span><br><span class="line">  <span class="keyword">double</span> totaltime;<span class="comment">//总的运行时间</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">//测试选择排序</span></span><br><span class="line">  <span class="built_in">cout</span>&lt;&lt;<span class="string">"执行选择排序后:"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;randsample.size();i++)</span><br><span class="line">  &#123;</span><br><span class="line">    data[i]=randsample[i];</span><br><span class="line">  &#125;</span><br><span class="line">  start=clock();</span><br><span class="line">  SelectSort(size);</span><br><span class="line">  finish=clock();</span><br><span class="line">  output(size);</span><br><span class="line">  totaltime=(<span class="keyword">double</span>)(finish-start)/CLOCKS_PER_SEC;</span><br><span class="line">  <span class="built_in">cout</span>&lt;&lt;<span class="string">"运行时间："</span>&lt;&lt;totaltime&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//产生随机数的函数</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; get_random(<span class="keyword">int</span> n, <span class="keyword">int</span> N)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec(N);<span class="comment">//N代表初始状态分配的空间大小</span></span><br><span class="line">  <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; out_vec;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;++i)</span><br><span class="line">  &#123;</span><br><span class="line">    vec[i]=i;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">int</span> rand_value=rand()%N;</span><br><span class="line">    out_vec.push_back(vec[rand_value]);</span><br><span class="line">    vec[rand_value]=vec[N<span class="number">-1</span>];<span class="comment">//将数组vec的元素</span></span><br><span class="line">    N--;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> out_vec;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//直接选择排序</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectSort</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j;</span><br><span class="line">  <span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">int</span> count1=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">int</span> k=i;<span class="comment">//在data[i]到data[n-1]找最小排序码元素</span></span><br><span class="line">    <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)&#123;</span><br><span class="line">      <span class="keyword">if</span>(data[j]&lt;data[k])&#123;</span><br><span class="line">        count++;<span class="comment">//当前具有最小排序码的元素</span></span><br><span class="line">        k=j;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(k!=i)</span><br><span class="line">    Swap(i,k);<span class="comment">//交换</span></span><br><span class="line">    count1++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">cout</span>&lt;&lt;<span class="string">"比较次数: "</span>&lt;&lt;count&lt;&lt;<span class="string">"  移动次数:  "</span>&lt;&lt;count1&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">output</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;data[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//交换函数</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Swap</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> tem;</span><br><span class="line">  tem = data[j];</span><br><span class="line">  data[j]= data[i];</span><br><span class="line">  data[i] = tem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>测试结果：</p>
+<p><img src="https://s2.ax1x.com/2019/11/12/M8Alhn.png" alt="M8Alhn.png"></p>
+<p><strong>插入排序Java代码实现</strong></p>
+<p><strong>插入排序Python代码实现</strong></p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sort</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(len(arr)<span class="number">-1</span>):</span><br><span class="line">        minIndex = j</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(j+<span class="number">1</span>,len(arr),<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span>(arr[i] &lt; arr[minIndex]):</span><br><span class="line">                minIndex = i</span><br><span class="line">        arr[j],arr[minIndex] = arr[minIndex],arr[j]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    arr =[]</span><br><span class="line">    <span class="keyword">while</span>(len(arr)&lt;<span class="number">100</span>):</span><br><span class="line">        x=random.randint(<span class="number">0</span>,<span class="number">10000</span>)</span><br><span class="line">        <span class="keyword">if</span> x <span class="keyword">not</span> <span class="keyword">in</span> arr:</span><br><span class="line">            arr.append(x)</span><br><span class="line">    sort(arr)</span><br><span class="line">    print(arr)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="算法分析："><a href="#算法分析：" class="headerlink" title="算法分析："></a>算法分析：</h2><p>直接选择排序的排序码比较次数KCN与元素的初始排列无关。第i趟选择具有最小排序码元素所需的比较次数总是n-i-1次，此处假定整个待排序元素序列有n个元素。因此，总的排序码比较次数为:</p>
+<p>$\displaystyle KCN=\sum_{i=0}^{n-2}{(n-i-1)}$=n*(n-1)/2</p>
+<p>元素的移动次数与元素序列的初始排列有关。当这组元素的初始状态是按其排序码从小到大有序的时候，元素的移动次数RMN=0，达到最少；而最坏情况是每一趟都要进行交换，总的元素移动次数为RMN=3（n一1)。它对一类重要的元素序列具有较好的效率，这就是元素规模很大，而排序码却比较小的序列。因为对这种的序列进行排序，移动操作所花费的时间要比比较操作的时间大得多，而其他算法移动操作所花费的时间要比比较操作的时间大的多，而其他算法移动操作次数都要比选择排序来得多。直接选择排序是一种不稳定的排序方法。</p>
+
+
         
-
-  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-11-10T14:01:50+08:00" content="2019-11-10">
-          11-10
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/11/10/Hello World/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
 
       
     </div>
 
+      <!-- 相关文章推荐 -->
+     
+          
+
+  <div class="popular-posts-header">
+    <i class="fa fa-graduation-cap"></i>
+    相关文章
+  </div>
+
+ <details>
+   <summary>点击查看</summary>
+     <ul class="popular-posts">
+     
+       <li class="popular-posts-item">
+         
+         
+         <div class="popular-posts-title"><a href="/2019/11/10/Hello World/" rel="bookmark">Hello World</a></div>
+         
+       </li>
+     
+       <li class="popular-posts-item">
+         
+         
+         <div class="popular-posts-title"><a href="/2019/10/12/栈的储存结构及相关操作/" rel="bookmark">栈的储存结构及相关操作</a></div>
+         
+       </li>
+     
+       <li class="popular-posts-item">
+         
+         
+         <div class="popular-posts-title"><a href="/2019/10/12/二叉搜索树的相关实现/" rel="bookmark">二叉搜索树的相关实现</a></div>
+         
+       </li>
+     
+       <li class="popular-posts-item">
+         
+         
+         <div class="popular-posts-title"><a href="/2019/11/09/线性表的链式存储结构/" rel="bookmark">线性表的链式存储结构</a></div>
+         
+       </li>
+     
+     </ul>
+ </details>
+
+
+
+     
+
+    
+    
+    
+
+    <div>
+          
+            
+
+          
+    </div>
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div class="read-over">-------------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------------</div>
+    
+</div>
+
+      
+    </div>
+
+    
+      <div>
+        <div class="share_reward">
+  <div>坚持原创技术分享，感谢您的支持和鼓励！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="相逢 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="相逢 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据结构/" rel="tag"> <i class="fa fa-tag"></i> 数据结构</a>
+          
+            <a href="/tags/C/" rel="tag"> <i class="fa fa-tag"></i> C++</a>
+          
+            <a href="/tags/Java/" rel="tag"> <i class="fa fa-tag"></i> Java</a>
+          
+            <a href="/tags/Python/" rel="tag"> <i class="fa fa-tag"></i> Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/10/Hello World/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+         <div data-weibo-title="分享到微博" data-qq-title="分享到QQ" data-douban-title="分享到豆瓣" class="social-share" data-disabled="qzone,google+,linkedin" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣...">
+   分享到：
+</div>
+
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -382,6 +709,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
 
 
@@ -406,8 +740,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -864,6 +1207,22 @@ show_date_time();
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#接下来分析完了插入排序的算法，我们就到了分享代码的这个激动人心的时刻了："><span class="nav-number">1.</span> <span class="nav-text">接下来分析完了插入排序的算法，我们就到了分享代码的这个激动人心的时刻了：</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#算法分析："><span class="nav-number"></span> <span class="nav-text">算法分析：</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -1064,6 +1423,10 @@ show_date_time();
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
