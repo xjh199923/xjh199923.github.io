@@ -108,7 +108,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20191113090100467.gif">
 <meta property="og:image" content="https://s2.ax1x.com/2019/11/13/M8xU9U.md.png">
-<meta property="og:updated_time" content="2019-11-13T02:40:11.370Z">
+<meta property="og:updated_time" content="2019-11-13T14:51:45.337Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="冒泡排序">
 <meta name="twitter:description" content="排序算法之冒泡排序,冒泡排序，冒泡排序是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果它们的顺序错误就把它们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。">
@@ -551,12 +551,14 @@
 
 <h3 id="冒泡排序Python代码实现"><a href="#冒泡排序Python代码实现" class="headerlink" title="冒泡排序Python代码实现"></a>冒泡排序Python代码实现</h3><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">ExchangeSort</span><span class="params">(nums)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums) - <span class="number">1</span>):</span><br><span class="line">        ex_flag = <span class="literal">False</span>  <span class="comment"># 改进后的冒泡，设置一个交换标志位</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(nums) - i - <span class="number">1</span>):</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> nums[j] &gt; nums[j + <span class="number">1</span>]:</span><br><span class="line">                nums[j], nums[j + <span class="number">1</span>] = nums[j + <span class="number">1</span>], nums[j]</span><br><span class="line">                ex_flag = <span class="literal">True</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> ex_flag:</span><br><span class="line">            <span class="keyword">return</span> nums  <span class="comment"># 这里代表计算机偷懒成功 (〃'▽'〃)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> nums  <span class="comment"># ExchangeSort这里代表计算机没有偷懒成功 o(╥﹏╥)o</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    arr =[]</span><br><span class="line">    <span class="keyword">while</span>(len(arr)&lt;<span class="number">100</span>):</span><br><span class="line">        x=random.randint(<span class="number">0</span>,<span class="number">10000</span>)</span><br><span class="line">        <span class="keyword">if</span> x <span class="keyword">not</span> <span class="keyword">in</span> arr:</span><br><span class="line">            arr.append(x)</span><br><span class="line">    ExchangeSort(arr)</span><br><span class="line">    print(arr)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="算法分析："><a href="#算法分析：" class="headerlink" title="算法分析："></a>算法分析：</h3><div class="note info"><p>起泡排序中，第越起泡中需要执行n一i次比较和交换操作。因此，从1到n一1，执行行的比较操作的次数为：</p>
+<h3 id="算法分析："><a href="#算法分析：" class="headerlink" title="算法分析："></a>算法分析：</h3><div class="note info"><p>起泡排序中，第i趟起泡中需要执行n一i次比较和交换操作。因此，从1到n一1，执行行的比较操作的次数为：</p>
 <p><strong><font color="#5cb85c"> (n-1)+(n-2)+…+2+1=n*(n-1)/2</font></strong><br>从排序的执行过程中可以看到基本的起泡排序的数据比较次数与输人序列中各待排序元素的初始排列无关，但数据的交换次数与各待排序元素的初始排列有关，它与逆序的发生有关，最好情况下可能一次也不交换，最差情况下每一次比较都需要交换。</p>
 <p>为此，在算法中可增加一个标志exchange,用以标识本趟起泡结果是否发生了逆序和交换。如果没有发生交换则exchange=false，表示全部元素已经排好序，因而可以停止处理，结束算法；如果xchange=true,表示本趟有元素发生交换，还需执行下一趟排序。</p>
-<p>在做了这样的改进之后，如果元素序列已经有序，那么只需要一趟起泡，算法就顺利结束了。因此，对于改进的起泡算法，最好的情况下需要n次比较和0次交换操作，而在一般情况最差情况下，排序算法大约需要n^2/2次比较和交换操作.</p>
-<p><strong><font color="#5cb85c"> 继续加油! </font></strong></p>
+<p>在做了这样的改进之后，如果元素序列已经有序，那么只需要一趟起泡，算法就顺利结束了。因此，对于改进的起泡算法，最好的情况下需要n次比较和0次交换操作，而在一般情况最差情况下，排序算法大约需要n^2/2次比较和交换操作.</p></div>
+
+<div class="note success"><p><strong><font color="#5cb85c"> 继续加油! </font></strong></p>
 <p>以上就是本次给大家分享的冒泡排序的几种语言的实现,如果有什么不足之处欢迎大家指出，留言，互相学习，共同进步。希望得到大家的支持,你的支持就是我前进的动力,接下来我会持续更新其他的排序算法，敬请期待！</p></div>
+
 
 
 
@@ -589,6 +591,13 @@
        <li class="popular-posts-item">
          
          
+         <div class="popular-posts-title"><a href="/2019/11/13/插入排序/" rel="bookmark">直接插入排序</a></div>
+         
+       </li>
+     
+       <li class="popular-posts-item">
+         
+         
          <div class="popular-posts-title"><a href="/2019/11/12/选择排序/" rel="bookmark">选择排序</a></div>
          
        </li>
@@ -596,14 +605,14 @@
        <li class="popular-posts-item">
          
          
-         <div class="popular-posts-title"><a href="/2019/10/12/栈的储存结构及相关操作/" rel="bookmark">栈的储存结构及相关操作</a></div>
+         <div class="popular-posts-title"><a href="/2019/10/12/二叉搜索树的相关实现/" rel="bookmark">二叉搜索树的相关实现</a></div>
          
        </li>
      
        <li class="popular-posts-item">
          
          
-         <div class="popular-posts-title"><a href="/2019/10/12/二叉搜索树的相关实现/" rel="bookmark">二叉搜索树的相关实现</a></div>
+         <div class="popular-posts-title"><a href="/2019/10/12/栈的储存结构及相关操作/" rel="bookmark">栈的储存结构及相关操作</a></div>
          
        </li>
      
@@ -713,6 +722,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/11/13/插入排序/" rel="prev" title="直接插入排序">
+                直接插入排序 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -805,7 +818,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">文章</span>
                 </a>
               </div>
@@ -827,7 +840,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -890,6 +903,10 @@
                   
                   
                     <li class="my-links-of-blogroll-li">
+                      <a href="/2019/11/13/插入排序/" title="直接插入排序" target="_blank">直接插入排序</a>
+                    </li>
+                  
+                    <li class="my-links-of-blogroll-li">
                       <a href="/2019/11/13/冒泡排序/" title="冒泡排序" target="_blank">冒泡排序</a>
                     </li>
                   
@@ -903,10 +920,6 @@
                   
                     <li class="my-links-of-blogroll-li">
                       <a href="/2019/11/09/线性表的链式存储结构/" title="线性表的链式存储结构" target="_blank">线性表的链式存储结构</a>
-                    </li>
-                  
-                    <li class="my-links-of-blogroll-li">
-                      <a href="/2019/10/12/栈的储存结构及相关操作/" title="栈的储存结构及相关操作" target="_blank">栈的储存结构及相关操作</a>
                     </li>
                   
                 </ul>
@@ -1273,7 +1286,7 @@ show_date_time();
       <h3 class="widget-title">Tag Cloud</h3>
       <div id="myCanvasContainer" class="widget tagcloud">
           <canvas width="250" height="250" id="resCanvas" style="width=100%">
-              <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/冒泡排序/">冒泡排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/杨辉三角/">杨辉三角</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/栈/">栈</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/类模板/">类模板</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性表/">线性表</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/选择排序/">选择排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/队列/">队列</a><span class="tag-list-count">1</span></li></ul>
+              <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/冒泡排序/">冒泡排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/插入排序/">插入排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/杨辉三角/">杨辉三角</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/栈/">栈</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/类模板/">类模板</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性表/">线性表</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/选择排序/">选择排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/队列/">队列</a><span class="tag-list-count">1</span></li></ul>
           </canvas>
       </div>
       </div>
@@ -1321,7 +1334,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共13k字 &nbsp;|&nbsp; Since 2019/11/01</span>
+  <span class="post-count">全站共14.9k字 &nbsp;|&nbsp; Since 2019/11/01</span>
 </div>
 
         
