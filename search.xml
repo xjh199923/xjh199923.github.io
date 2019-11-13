@@ -112,8 +112,6 @@
       
         <tags>
             
-            <tag> 栈 </tag>
-            
             <tag> 数据结构 </tag>
             
             <tag> C++ </tag>
@@ -121,6 +119,8 @@
             <tag> Java </tag>
             
             <tag> Python </tag>
+            
+            <tag> 栈 </tag>
             
             <tag> Hexo </tag>
             
@@ -182,11 +182,11 @@
       
         <tags>
             
-            <tag> 栈 </tag>
-            
             <tag> 数据结构 </tag>
             
             <tag> C++ </tag>
+            
+            <tag> 栈 </tag>
             
         </tags>
       
