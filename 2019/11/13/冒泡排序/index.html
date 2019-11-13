@@ -108,7 +108,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20191113090100467.gif">
 <meta property="og:image" content="https://s2.ax1x.com/2019/11/13/M8xU9U.md.png">
-<meta property="og:updated_time" content="2019-11-13T02:30:01.078Z">
+<meta property="og:updated_time" content="2019-11-13T02:40:11.370Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="冒泡排序">
 <meta name="twitter:description" content="排序算法之冒泡排序,冒泡排序，冒泡排序是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果它们的顺序错误就把它们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。">
@@ -586,13 +586,6 @@
        <li class="popular-posts-item">
          
          
-         <div class="popular-posts-title"><a href="/2019/10/12/二叉搜索树的相关实现/" rel="bookmark">二叉搜索树的相关实现</a></div>
-         
-       </li>
-     
-       <li class="popular-posts-item">
-         
-         
          <div class="popular-posts-title"><a href="/2019/10/12/栈的储存结构及相关操作/" rel="bookmark">栈的储存结构及相关操作</a></div>
          
        </li>
@@ -601,6 +594,13 @@
          
          
          <div class="popular-posts-title"><a href="/2019/11/09/线性表的链式存储结构/" rel="bookmark">线性表的链式存储结构</a></div>
+         
+       </li>
+     
+       <li class="popular-posts-item">
+         
+         
+         <div class="popular-posts-title"><a href="/2019/10/12/二叉搜索树的相关实现/" rel="bookmark">二叉搜索树的相关实现</a></div>
          
        </li>
      
@@ -737,8 +737,8 @@
           
 
   
-    <div class="comments" id="comments">
-    </div>
+    <div id="gitalk-container"></div>
+
   
 
 
@@ -1494,6 +1494,22 @@ show_date_time();
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '09ad3f1ca7d649527c01',
+          clientSecret: 'aeffd0b9fb76f663264cce285ef96bcd6dfd1a10',
+          repo: 'xjh199923.github.io',
+          owner: 'xjh199923',
+          admin: ['xjh199923'],
+          id: md5(window.location.pathname),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
 
 
