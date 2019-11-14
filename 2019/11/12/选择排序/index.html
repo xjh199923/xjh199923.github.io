@@ -108,7 +108,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zMi5heDF4LmNvbS8yMDE5LzExLzEyL00zMlFUeC5naWY">
 <meta property="og:image" content="https://s2.ax1x.com/2019/11/12/M88llD.md.png">
-<meta property="og:updated_time" content="2019-11-13T14:49:24.621Z">
+<meta property="og:updated_time" content="2019-11-14T10:06:46.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="选择排序">
 <meta name="twitter:description" content="排序算法之选择排序,选择排序，选择排序的基本思想描述为：每一趟在n-i+1(i=1,2,…,n-1)个记录中选取关键字最小的记录作为有序序列中第i个记录。具体来说，假设长度为n的数组arr，要按照从小到大排序，那么先从n个数字中找到最小值min1，如果最小值min1的位置不在数组的最左端(也就是min1不等于arr[0])，则将最小值min1和arr[0]交换，接着在剩下的n-1个数字中找到最小值">
@@ -559,7 +559,7 @@
 <h3 id="选择排序Python代码实现"><a href="#选择排序Python代码实现" class="headerlink" title="选择排序Python代码实现"></a>选择排序Python代码实现</h3><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sort</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(len(arr)<span class="number">-1</span>):</span><br><span class="line">        minIndex = j</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(j+<span class="number">1</span>,len(arr),<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span>(arr[i] &lt; arr[minIndex]):</span><br><span class="line">                minIndex = i</span><br><span class="line">        arr[j],arr[minIndex] = arr[minIndex],arr[j]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    arr =[]</span><br><span class="line">    <span class="keyword">while</span>(len(arr)&lt;<span class="number">100</span>):</span><br><span class="line">        x=random.randint(<span class="number">0</span>,<span class="number">10000</span>)</span><br><span class="line">        <span class="keyword">if</span> x <span class="keyword">not</span> <span class="keyword">in</span> arr:</span><br><span class="line">            arr.append(x)</span><br><span class="line">    sort(arr)</span><br><span class="line">    print(arr)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></div>
 
 <h3 id="算法分析："><a href="#算法分析：" class="headerlink" title="算法分析："></a>算法分析：</h3><div class="note info"><p>直接选择排序的排序码比较次数KCN与元素的初始排列无关。第i趟选择具有最小排序码元素所需的比较次数总是n-i-1次，此处假定整个待排序元素序列有n个元素。因此，总的排序码比较次数为:</p>
-<p>$\displaystyle KCN=$\sum_{i=0}^{n-2}{(n-i-1)}$=n*(n-1)/2</p>
+<p>$\displaystyle KCN=\sum_{i=0}^{n-2}{(n-i-1)}$=n*(n-1)/2</p>
 <p>元素的移动次数与元素序列的初始排列有关。当这组元素的初始状态是按其排序码从小到大有序的时候，元素的移动次数RMN=0，达到最少；而最坏情况是每一趟都要进行交换，总的元素移动次数为RMN=3（n一1)。它对一类重要的元素序列具有较好的效率，这就是元素规模很大，而排序码却比较小的序列。因为对这种的序列进行排序，移动操作所花费的时间要比比较操作的时间大得多，而其他算法移动操作所花费的时间要比比较操作的时间大的多，而其他算法移动操作次数都要比选择排序来得多。直接选择排序是一种不稳定的排序方法。</p></div>
 
 <div class="note success"><p><strong><font color="#5cb85c"> 继续加油! </font></strong></p>
@@ -587,14 +587,14 @@
        <li class="popular-posts-item">
          
          
-         <div class="popular-posts-title"><a href="/2019/11/13/冒泡排序/" rel="bookmark">冒泡排序</a></div>
+         <div class="popular-posts-title"><a href="/2019/11/13/插入排序/" rel="bookmark">直接插入排序</a></div>
          
        </li>
      
        <li class="popular-posts-item">
          
          
-         <div class="popular-posts-title"><a href="/2019/11/13/插入排序/" rel="bookmark">直接插入排序</a></div>
+         <div class="popular-posts-title"><a href="/2019/11/13/冒泡排序/" rel="bookmark">冒泡排序</a></div>
          
        </li>
      
@@ -608,14 +608,14 @@
        <li class="popular-posts-item">
          
          
-         <div class="popular-posts-title"><a href="/2019/10/12/栈的储存结构及相关操作/" rel="bookmark">栈的储存结构及相关操作</a></div>
+         <div class="popular-posts-title"><a href="/2019/11/09/线性表的链式存储结构/" rel="bookmark">线性表的链式存储结构</a></div>
          
        </li>
      
        <li class="popular-posts-item">
          
          
-         <div class="popular-posts-title"><a href="/2019/11/09/线性表的链式存储结构/" rel="bookmark">线性表的链式存储结构</a></div>
+         <div class="popular-posts-title"><a href="/2019/10/12/栈的储存结构及相关操作/" rel="bookmark">栈的储存结构及相关操作</a></div>
          
        </li>
      
