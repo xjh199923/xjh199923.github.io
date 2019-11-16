@@ -100,7 +100,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="相逢何必问君处">
-<meta property="og:url" content="xjh199923.top/archives/2019/index.html">
+<meta property="og:url" content="xjh199923.top/page/2/index.html">
 <meta property="og:site_name" content="相逢何必问君处">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -134,7 +134,7 @@
 
 
 
-  <link rel="canonical" href="xjh199923.top/archives/2019/">
+  <link rel="canonical" href="xjh199923.top/page/2/">
 
 
 
@@ -152,7 +152,7 @@
     })();
 </script>
 
-  <title>归档 | 相逢何必问君处</title>
+  <title>相逢何必问君处</title>
 
   
       <!-- 球型气泡标签云 -->
@@ -179,7 +179,8 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <!--fork me from github-->
@@ -328,316 +329,640 @@
           <div id="content" class="content">
             
 
+  <!--轮播图-->
   
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-      <span class="archive-page-counter">
+<style type="text/css">
+
+.glyphicon-chevron-left:before{
+	/* content: "《" */
+}
+.glyphicon-chevron-right:before{
+	/* content: "》" */
+}
+
+.right-siders{
+   border-radius: 10px;
+   /*margin-top: 5px;*/
+   margin-bottom: 5px;
+}
+
+.my-carousel:hover{
+  margin-left: 5px;
+  //padding: 5px 1px;
+  border-radius: 5px;
+  transform: scale(1.1);
+  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);
+}
+
+@media (max-width: 767px){
+   .rights{
+      display: none;
+   }
+   .carousel{
+      width: 100% !important;
+      height: 100% !important;
+   }
+   .slide{
+      width: 100% !important;
+      height: 100% !important;
+   }
+	
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+   /* margin-right: -10px; */
+  }
+
+}
+
+.carousel{
+	width: 65%;
+	height: 100%;
+	position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /*width: 5%;*/
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#00000000, GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#80000000, GradientType=1);
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  outline: 0;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+/*
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+*/
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  background: url('/images/icon-slides.png');
+  background-position-y: -20px;
+  left: 9px;
+}
+
+/*
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+*/
+
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  background: url('/images/icon-slides.png');
+  background-position-x: -50px;
+  background-position-y: -20px;
+  right: 0px;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-family: serif;
+}
+
+.carousel-control .icon-prev:before {
+  content: 2039;
+}
+.carousel-control .icon-next:before {
+  content: 203a;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  text-indent: -999px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .24);
+}
+.carousel-indicators .active {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+   /* margin-right: -10px; */
+  }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+    bottom: -10px;
+  }
+}
+</style>
+
+<div width="100%" height="320px" style="border: 0px; overflow: hidden; border-radius: 10px; margin-bottom: 25px;" scrolling="no">
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left">
+
+      <!-- 轮播（Carousel）指标 -->
+      <ol class="carousel-indicators">
+      
+      
+        <li data-target="#myCarousel" data-slide-to="0"></li>
         
+      
+        <li data-target="#myCarousel" data-slide-to="1"></li>
         
+      
+        <li data-target="#myCarousel" data-slide-to="2"></li>
         
+      
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        
+      
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        
+      
+      </ol>
+
+      <!-- 轮播（Carousel）项目 -->
+      <div class="carousel-inner" style="height: 280px; border-radius: 10px; width: 100%;">
+       
+       
           
+          <a class="item active" href="https://xjh199923.github.io" target="_blank" style="height: 100%;">
+            
+            <img src="/images/friend.jpg" class="nofancybox" style="width: 100%; height: 100%">
+          </a>
+          
+          
+      
+          
+            <a class="item" href="https://mailchi.mp/e92415d27722/leaf" target="_blank" style="height: 100%;">
+              <img src="https://s2.ax1x.com/2019/10/24/KNHdCq.jpg" class="nofancybox" style="width: 100%; height: 100%;">
+            </a>
         
-        嗯..! 共计 8 篇文章。 继续努力！
-      </span>
+      
+          
+            <a class="item" href="https://github.com/leafjame/hexo-theme-next5-leaf" target="_blank" style="height: 100%;">
+              <img src="https://s2.ax1x.com/2019/10/10/u7DWuV.jpg" class="nofancybox" style="width: 100%; height: 100%;">
+            </a>
+        
+      
+          
+            <a class="item" href="https://xjh199923.github.io/photos/" target="_blank" style="height: 100%;">
+              <img src="/images/life.jpg" class="nofancybox" style="width: 100%; height: 100%;">
+            </a>
+        
+      
+          
+            <a class="item" href="https://leafjame.github.io/tags/Hexo-NexT/" target="_blank" style="height: 100%;">
+              <img src="https://s2.ax1x.com/2019/09/22/u9HFxA.gif" class="nofancybox" style="width: 100%; height: 100%;">
+            </a>
+        
+      
+      </div>
 
+      <!-- 轮播（Carousel）导航 -->
+      <a class="left carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+
+	  </div>
+
+		<div class="rights" style="width: 30%; height: 290px; margin-right: 0px;margin-left: 20px;float: left;">
+  	   <!-- 天气插件 -->
+       <iframe width="300px" scrolling="no" height="50px" frameborder="0" allowtransparency="true" src="//i.tianqi.com/index.php?c=code&id=12&color=%23&bdc=%23&icon=1&py=chongqing&num=2&site=12"></iframe>
+
+  	   <!-- r热门排行 -->
+  	   <div class="my-carousel">
+         <a href="https://leafjame.github.io/top/" target="_blank">
+            <img class="right-siders nofancybox" src="/images/hot.png" width="100%">
+         </a>
+  	   </div>
+
+  	   <!-- 时光留影 -->
+  	   <div class="my-carousel">
+         <a href="https://leafjame.github.io/photos/" target="_blank">
+           <img class="right-siders nofancybox" src="/images/time.png">
+         </a>
+  	   </div>
+
+      <!-- 推荐阅读 -->
+      <div class="my-carousel">
+        <a href="/books/" target="_blank">
+          <img class="right-siders nofancybox" src="/images/read.png">
+        </a>
+      </div>
+
+      <!-- 订阅本站 -->
+      <div class="my-carousel">
+         <a href="https://mailchi.mp/e92415d27722/leaf" target="_blank">
+           <img class="right-siders nofancybox" src="/images/subscribe.png">
+         </a>
+      </div>
+
+   </div>
+
+</div>
+
+
+
+
+  <section id="posts" class="posts-expand">
+    
       
 
-        
-        
-        
+  
+
+  
+  
+  
+
+  <article class="post post-type-categories" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="xjh199923.top/2019/10/12/二叉搜索树的相关实现/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="相逢">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="相逢何必问君处">
+    </span>
+
+    
+      <header class="post-header">
 
         
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/12/二叉搜索树的相关实现/" itemprop="url">二叉搜索树的相关实现</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+             
+
+             
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-12T19:21:47+08:00">
+                2019-10-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2019">2019</h2>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/10/12/二叉搜索树的相关实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/12/二叉搜索树的相关实现/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          <!--
+          
+          -->
+
+          
+            <span class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数">
+                  2.5k
+                </span>
+              
+
+              
+
+              
+            </span>
+          
+
+          <!-- 隐藏文章内标题下，内容描述
+          
+          -->
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h2><p><strong><em>二叉搜索树实现了以下功能<br>1.计算二叉搜索树的大小<br>2.前中后递归遍历二叉搜索树<br>3.前中后非递归遍历二叉搜索树<br>4.层序遍历二叉搜索树<br>5.二叉搜索树叶子个数<br>6.二叉搜索树的深度<br>7.二叉搜索树的结点的度<br>8.二叉搜索树的双亲以及左右子女的查找<br>9.查找某一节点<br>10.插入新的结点<br>11.删除某一节点<br>12.判断是否为平衡树</em></strong><br><img src="https://img-blog.csdnimg.cn/20191030231545417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMzM2Mzkw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/12/二叉搜索树的相关实现/" rel="contents">
+              阅读全文 &raquo;
+            </a>
           </div>
+          <!--/noindex-->
         
-        
-
-        
-
-  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-11-15T16:50:18+08:00" content="2019-11-15">
-          11-15
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/11/15/希尔排序/" itemprop="url">
-              
-                <span itemprop="name">希尔排序</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-11-13T21:30:13+08:00" content="2019-11-13">
-          11-13
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/11/13/插入排序/" itemprop="url">
-              
-                <span itemprop="name">直接插入排序</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-11-13T10:09:53+08:00" content="2019-11-13">
-          11-13
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/11/13/冒泡排序/" itemprop="url">
-              
-                <span itemprop="name">冒泡排序</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-11-12T18:55:34+08:00" content="2019-11-12">
-          11-12
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/11/12/选择排序/" itemprop="url">
-              
-                <span itemprop="name">选择排序</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-11-09T13:38:37+08:00" content="2019-11-09">
-          11-09
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/11/09/线性表的链式存储结构/" itemprop="url">
-              
-                <span itemprop="name">线性表的链式存储结构</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-10-12T20:07:44+08:00" content="2019-10-12">
-          10-12
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/10/12/栈的储存结构及相关操作/" itemprop="url">
-              
-                <span itemprop="name">栈的储存结构及相关操作</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="my-post post-type-categories" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-10-12T19:22:04+08:00" content="2019-10-12">
-          10-12
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/10/12/队列的相关操作/" itemprop="url">
-              
-                <span itemprop="name">队列的相关操作(队列实现杨辉三角的打印)</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="my-post post-type-categories" itemscope itemtype="http://schema.org/Article">
-    <header class="my-post-header">
-
-      <div class="my-post-meta">
-        <time class="my-post-time" itemprop="dateCreated" datetime="2019-10-12T19:21:47+08:00" content="2019-10-12">
-          10-12
-        </time>
-      </div>
-
-      <h3 class="my-post-title">
-        
-            <a class="my-post-title-link" href="/2019/10/12/二叉搜索树的相关实现/" itemprop="url">
-              
-                <span itemprop="name">二叉搜索树的相关实现</span>
-              
-            </a>
-        
-      </h3>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+
+      <!-- 相关文章推荐 -->
+     
+
+    
+    
+    
+
+    <div>
+          
+    </div>
+
+    
+
+    <div>
+      
+    </div>
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
+
+
+    
+  </section>
 
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 
 
 
