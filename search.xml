@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Mac安装Qt教程</title>
+      <link href="/2019/12/15/Mac%E5%AE%89%E8%A3%85Qt%E6%95%99%E7%A8%8B/"/>
+      <url>/2019/12/15/Mac%E5%AE%89%E8%A3%85Qt%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="史上最详细mac安装Qt教程，小白看过来！"><a href="#史上最详细mac安装Qt教程，小白看过来！" class="headerlink" title="史上最详细mac安装Qt教程，小白看过来！"></a>史上最详细mac安装Qt教程，小白看过来！</h1><h3 id="这是一篇非常适合Qt入门小白的的安装Qt教程，因为这学期我们小组的一个关于高速救援的项目要用到Qt与web进行交互式展现相关的图像，由于没有MSVC这个插件，所以我只好选择重装Qt，这次没有第一次装那么困难，毕竟经历过一次，这次我以这篇博客记录下来，分享给大家！"><a href="#这是一篇非常适合Qt入门小白的的安装Qt教程，因为这学期我们小组的一个关于高速救援的项目要用到Qt与web进行交互式展现相关的图像，由于没有MSVC这个插件，所以我只好选择重装Qt，这次没有第一次装那么困难，毕竟经历过一次，这次我以这篇博客记录下来，分享给大家！" class="headerlink" title="这是一篇非常适合Qt入门小白的的安装Qt教程，因为这学期我们小组的一个关于高速救援的项目要用到Qt与web进行交互式展现相关的图像，由于没有MSVC这个插件，所以我只好选择重装Qt，这次没有第一次装那么困难，毕竟经历过一次，这次我以这篇博客记录下来，分享给大家！"></a>这是一篇非常适合Qt入门小白的的安装Qt教程，因为这学期我们小组的一个关于高速救援的项目要用到Qt与web进行交互式展现相关的图像，由于没有MSVC这个插件，所以我只好选择重装Qt，这次没有第一次装那么困难，毕竟经历过一次，这次我以这篇博客记录下来，分享给大家！</h3><h5 id="首先，进入QT官网"><a href="#首先，进入QT官网" class="headerlink" title="首先，进入QT官网"></a>首先，进入<a href="http://download.qt.io/archive/qt/" target="_blank" rel="noopener">QT官网</a></h5><h5 id="选择你需要的版本，我选择了5-13，因为5-14才更新两天，不喜欢用最新的，当这个小白鼠。"><a href="#选择你需要的版本，我选择了5-13，因为5-14才更新两天，不喜欢用最新的，当这个小白鼠。" class="headerlink" title="选择你需要的版本，我选择了5.13，因为5.14才更新两天，不喜欢用最新的，当这个小白鼠。"></a>选择你需要的版本，我选择了5.13，因为5.14才更新两天，不喜欢用最新的，当这个小白鼠。</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qf5gp9.md.png" alt="在这里插入图片描述"></p><h5 id="选择你需要的安装，当然mac是选择小编勾画出来的部分"><a href="#选择你需要的安装，当然mac是选择小编勾画出来的部分" class="headerlink" title="选择你需要的安装，当然mac是选择小编勾画出来的部分"></a>选择你需要的安装，当然mac是选择小编勾画出来的部分</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qf52lR.md.png" alt="在这里插入图片描述"></p><h5 id="接下来又是漫长的等待下载环节，没想到今天学校的网速这么给力"><a href="#接下来又是漫长的等待下载环节，没想到今天学校的网速这么给力" class="headerlink" title="接下来又是漫长的等待下载环节，没想到今天学校的网速这么给力"></a>接下来又是漫长的等待下载环节，没想到今天学校的网速这么给力</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qf56fJ.png" alt="Qf56fJ.png"></p><h5 id="下载好之后双击安装"><a href="#下载好之后双击安装" class="headerlink" title="下载好之后双击安装"></a>下载好之后双击安装</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qf5yY4.png" alt="Qf5yY4.png"></p><h5 id="我也不知道为什么这次安装验证了这么久，可能是还是有2个多G吧，我等了超久。"><a href="#我也不知道为什么这次安装验证了这么久，可能是还是有2个多G吧，我等了超久。" class="headerlink" title="我也不知道为什么这次安装验证了这么久，可能是还是有2个多G吧，我等了超久。"></a>我也不知道为什么这次安装验证了这么久，可能是还是有2个多G吧，我等了超久。</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qf5R61.png" alt="Qf5R61.png"></p><h5 id="验证成功之后就会出现下面这个界面，毫不犹豫的next"><a href="#验证成功之后就会出现下面这个界面，毫不犹豫的next" class="headerlink" title="验证成功之后就会出现下面这个界面，毫不犹豫的next"></a>验证成功之后就会出现下面这个界面，毫不犹豫的next</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qf5WOx.png" alt="Qf5WOx.png"></p><h5 id="接下来你需要选择你的安装地址，等会儿会下载需要的插件的安装位置，选择好之后就继续"><a href="#接下来你需要选择你的安装地址，等会儿会下载需要的插件的安装位置，选择好之后就继续" class="headerlink" title="接下来你需要选择你的安装地址，等会儿会下载需要的插件的安装位置，选择好之后就继续"></a>接下来你需要选择你的安装地址，等会儿会下载需要的插件的安装位置，选择好之后就继续</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qf5hm6.png" alt="Qf5hm6.png"></p><h5 id="看到下面这个界面就不用我说了吧，当然是I-have-啊"><a href="#看到下面这个界面就不用我说了吧，当然是I-have-啊" class="headerlink" title="看到下面这个界面就不用我说了吧，当然是I have 啊"></a>看到下面这个界面就不用我说了吧，当然是I have 啊</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qf540K.png" alt="Qf540K.png"></p><h5 id="下面这一步你需要选择你需要的插件，如果你电脑吃的消全选也没啥问题，本来想要MSVC-没想到没有，我太气了！只能说利用这次水一篇教程的博文吧哈哈哈，选择好之后点击继续，接下来需要等待一段时间，毕竟要下载几个G的插件嘛，耐心等待吧"><a href="#下面这一步你需要选择你需要的插件，如果你电脑吃的消全选也没啥问题，本来想要MSVC-没想到没有，我太气了！只能说利用这次水一篇教程的博文吧哈哈哈，选择好之后点击继续，接下来需要等待一段时间，毕竟要下载几个G的插件嘛，耐心等待吧" class="headerlink" title="下面这一步你需要选择你需要的插件，如果你电脑吃的消全选也没啥问题，本来想要MSVC,没想到没有，我太气了！只能说利用这次水一篇教程的博文吧哈哈哈，选择好之后点击继续，接下来需要等待一段时间，毕竟要下载几个G的插件嘛，耐心等待吧"></a>下面这一步你需要选择你需要的插件，如果你电脑吃的消全选也没啥问题，本来想要MSVC,没想到没有，我太气了！只能说利用这次水一篇教程的博文吧哈哈哈，选择好之后点击继续，接下来需要等待一段时间，毕竟要下载几个G的插件嘛，耐心等待吧</h5><p><img src="https://s2.ax1x.com/2019/12/15/QfTx76.png" alt="QfTx76.png"></p><h5 id="终于等到了安装成功！"><a href="#终于等到了安装成功！" class="headerlink" title="终于等到了安装成功！"></a>终于等到了安装成功！</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhFTUS.png" alt="QhFTUS.png"><br><img src="https://s2.ax1x.com/2019/12/15/QhF5Hf.png" alt="QhF5Hf.png"></p><h5 id="接下来创建一个project看看吧"><a href="#接下来创建一个project看看吧" class="headerlink" title="接下来创建一个project看看吧"></a>接下来创建一个project看看吧</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhFbCQ.png" alt="QhFbCQ.png"></p><h5 id="新建项目new-project"><a href="#新建项目new-project" class="headerlink" title="新建项目new project"></a>新建项目new project</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhFoE8.png" alt="QhFoE8.png"></p><h5 id="就拿一个wedgets来测试吧"><a href="#就拿一个wedgets来测试吧" class="headerlink" title="就拿一个wedgets来测试吧"></a>就拿一个wedgets来测试吧</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhF4DP.png" alt="QhF4DP.png"></p><h5 id="在此你要设置你的项目路径，与你的Qt安装路径是不一样的，这个路径是你的项目产生的文件所存取的路径-然后点击继续"><a href="#在此你要设置你的项目路径，与你的Qt安装路径是不一样的，这个路径是你的项目产生的文件所存取的路径-然后点击继续" class="headerlink" title="在此你要设置你的项目路径，与你的Qt安装路径是不一样的，这个路径是你的项目产生的文件所存取的路径,然后点击继续"></a>在此你要设置你的项目路径，与你的Qt安装路径是不一样的，这个路径是你的项目产生的文件所存取的路径,然后点击继续</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhFq3j.png" alt="QhFq3j.png"></p><h5 id="采用qmake来进行编译"><a href="#采用qmake来进行编译" class="headerlink" title="采用qmake来进行编译"></a>采用qmake来进行编译</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhFOvn.png" alt="QhFOvn.png"></p><h5 id="创建之后会产生以下相关的窗体设计文件"><a href="#创建之后会产生以下相关的窗体设计文件" class="headerlink" title="创建之后会产生以下相关的窗体设计文件"></a>创建之后会产生以下相关的窗体设计文件</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhFjuq.png" alt="QhFjuq.png"></p><h5 id="选择一个kits"><a href="#选择一个kits" class="headerlink" title="选择一个kits"></a>选择一个kits</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhFvD0.png" alt="QhFvD0.png"></p><h5 id="最后一完成之后就OK了"><a href="#最后一完成之后就OK了" class="headerlink" title="最后一完成之后就OK了"></a>最后一完成之后就OK了</h5><p><img src="https://s2.ax1x.com/2019/12/15/QhFxbV.png" alt="QhFxbV.png"></p><h5 id="不需要添加任何代码，直接编译运行，出现一个窗口说明就成功了"><a href="#不需要添加任何代码，直接编译运行，出现一个窗口说明就成功了" class="headerlink" title="不需要添加任何代码，直接编译运行，出现一个窗口说明就成功了"></a>不需要添加任何代码，直接编译运行，出现一个窗口说明就成功了</h5><p><img src="https://s2.ax1x.com/2019/12/15/Qhk95F.png" alt="Qhk95F.png"></p><div class="note success"><p> 继续加油!<br>到这里基本上教程就算得上是结束了，如果有写的不好的地方，欢迎评论指出来，我做相应的修正。一篇小小的教程可能需要花很多的时间去堆积，如果觉得还不错的就点上一个赞吧，你的支持就是我前进的动力，我们一起学习，共同进步！ </p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mac </category>
+          
+          <category> Qt </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mac </tag>
+            
+            <tag> Qt </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>希尔排序</title>
       <link href="/2019/11/15/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F/"/>
       <url>/2019/11/15/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F/</url>
