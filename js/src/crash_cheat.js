@@ -1,3 +1,3 @@
-// build time:Tue Feb 25 2020 07:37:53 GMT+0800 (中国标准时间)
+// build time:Thu Feb 27 2020 23:08:48 GMT+0800 (中国标准时间)
 window.onload=function(){var e=document.title;var t;document.addEventListener("visibilitychange",function(){if(document.hidden){$('[rel="icon"]').attr("href","../../images/failure.png");$('[rel="shortcut icon"]').attr("href","../../images/failure.png");document.title="(●—●)喔哟，崩溃啦！";clearTimeout(t)}else{$('[rel="icon"]').attr("href","../../images/favicon-32x32-next.png");$('[rel="shortcut icon"]').attr("href","../../images/favicon-32x32.png");document.title="(/≧▽≦/)咦！页面又好了！";t=setTimeout(function(){document.title=e},2e3)}})};
 //rebuild by neat 
